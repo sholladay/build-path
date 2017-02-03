@@ -12,7 +12,7 @@ test('buildPath() is a simple string', (t) => {
     t.true(str.length >= 'build/a/b'.length);
     const numPathSeps = (str.match(new RegExp(path.sep, 'g')) || []).length;
     t.is(numPathSeps, 2);
-    t.is(str, 'build/a/b');
+    t.is(str, path.join('build', 'a', 'b'));
 });
 
 test('throws when not given enough input', (t) => {
@@ -22,7 +22,7 @@ test('throws when not given enough input', (t) => {
         },
         TypeError
     );
-    t.regex(err1, /branch/);
+    t.is(err1.message, 'A branch is required to create the build path.');
 
     const err2 = t.throws(
         () => {
@@ -32,7 +32,7 @@ test('throws when not given enough input', (t) => {
         },
         TypeError
     );
-    t.regex(err2, /version/);
+    t.is(err2.message, 'A version is required to create the build path.');
 
     t.notThrows(() => {
         buildPath({
