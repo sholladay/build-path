@@ -1,52 +1,54 @@
 {
-  "name": "build-path",
-  "version": "1.0.0",
-  "description": "Get a path for the given build.",
-  "homepage": "https://github.com/sholladay/build-path",
-  "main": "index.js",
-  "author": {
-    "name": "Seth Holladay",
-    "url": "http://seth-holladay.com",
-    "email": "me@seth-holladay.com"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:sholladay/build-path.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sholladay/build-path/issues",
-    "email": "me@seth-holladay.com"
-  },
-  "engines": {
-    "node": ">=6"
-  },
-  "license": "MPL-2.0",
-  "files": [
-    "index.js"
-  ],
-  "devDependencies": {
-    "ava": "^0.17.0",
-    "eslint-config-tidy": "^0.4.1",
-    "xo": "^0.17.1"
-  },
-  "keywords": [
-    "compile",
-    "build",
-    "builds",
-    "branch",
-    "version",
-    "path",
-    "paths",
-    "dir",
-    "dirs",
-    "directory",
-    "directories",
-    "tooling"
-  ],
-  "xo": {
-    "extend": "tidy"
-  }
+    "name": "build-path",
+    "version": "1.0.0",
+    "description": "Get a path for the given build",
+    "homepage": "https://github.com/sholladay/build-path",
+    "main": "index.js",
+    "author": {
+        "name": "Seth Holladay",
+        "url": "https://seth-holladay.com",
+        "email": "me@seth-holladay.com"
+    },
+    "scripts": {
+        "test": "xo && ava"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:sholladay/build-path.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sholladay/build-path/issues",
+        "email": "me@seth-holladay.com"
+    },
+    "engines": {
+        "node": ">=6"
+    },
+    "license": "MPL-2.0",
+    "files": [
+        "index.js"
+    ],
+    "devDependencies": {
+        "ava": "^0.17.0",
+        "eslint-config-tidy": "^0.4.1",
+        "xo": "^0.17.1"
+    },
+    "keywords": [
+        "compile",
+        "build",
+        "builds",
+        "branch",
+        "version",
+        "url",
+        "urls",
+        "path",
+        "paths",
+        "dir",
+        "dirs",
+        "directory",
+        "directories",
+        "tooling"
+    ],
+    "xo": {
+        "extend": "tidy"
+    }
 }
